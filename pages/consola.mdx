@@ -24,6 +24,8 @@ La puedes encontrar en el Menú escribiendo <samp>Powershell</samp>
 
 Esta es mi absoluta favorita. Windows ahora ofrece la experiencia linux completa en su sub-sistema. Para acceder a WSL, [deberás seguir las instrucciones](https://docs.microsoft.com/es-es/windows/wsl/install). Curiosamente, empiezas desde Powershell, pero ya sabes llegar ahí.
 
+> Con WSL los comandos a usar serán los de Linux/Mac, tendrás un sistema IX
+
 ### Mac
 
 Mac tiene por defecto su terminal, que encuentras en Spotlight.  
@@ -33,3 +35,15 @@ Usa <kbd>Command</kbd> y <kbd>Espacio</kbd> y escribe <samp>terminal</samp>.
 ### Linux
 
 Si tienes Linux, ya sabes esto, pero dependerá de tu distribución.
+
+## Saber dónde estoy
+
+La consola se navega por texto y es importante entender cómo funciona esto. Para el sistema operativo, todo es un archivo, incluso las carpetas. Las abstracciones que se crean vienen después, por eso es tan útil poder ver dónde estamos.
+
+### Windows
+
+En Windows usamos `$cd` sin parámetros para ver la posición actual. En inglés _change directory_, cambiar directorio tiene una pequeña complicación: solo aplica para el disco actual; si estás en `C:`, no podrás usarlo para ir a `D:`.
+
+### IX
+
+Para los IX usamos `pwd`. Este comando sólo ejecuta una función. En inglés _print working directory_, imprimir directorio de trabajo.
