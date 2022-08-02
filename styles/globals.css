@@ -23,6 +23,12 @@ h3 {
 h4 {
   position: relative;
 }
+.anchor-link svg {
+  opacity: 0.5;
+}
+.anchor-link:hover {
+  opacity: 0.9;
+}
 kbd {
   background-color: rgb(137, 139, 144);
   border-bottom-left-radius: 4px;
