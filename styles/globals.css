@@ -14,6 +14,15 @@ a {
 * {
   box-sizing: border-box;
 }
+h2 {
+  position: relative;
+}
+h3 {
+  position: relative;
+}
+h4 {
+  position: relative;
+}
 kbd {
   background-color: rgb(137, 139, 144);
   border-bottom-left-radius: 4px;
