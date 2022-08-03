@@ -79,6 +79,7 @@ main {
   display: block;
   max-width: 80ch;
   padding-top: 1.5em;
+  padding-left: 1em;
 }
 
 @media screen and (max-width: 768px) {
@@ -99,11 +100,21 @@ main {
     width: 100%;
     background-color: black;
   }
+  .navbar.show ol {
+    padding-top: 1.5em;
+  }
   .navbar-button {
+    background-color: dimgray;
+    color: white;
+    display: block;
+    text-align: center;
+    text-decoration: none;
     position: sticky;
+    border-radius: 2px;
     z-index: 999;
     top: 1em;
     left: 1em;
+    margin-left: 1em;
     display: block;
   }
 }
