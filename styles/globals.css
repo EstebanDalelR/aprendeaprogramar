@@ -66,3 +66,13 @@ kbd {
     background: black;
   }
 }
+nav {
+  display: block;
+}
+.navbar-list {
+  position: sticky;
+  top: 1em;
+}
+.layout {
+  display: flex;
+}
