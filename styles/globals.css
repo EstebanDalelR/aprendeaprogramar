@@ -66,9 +66,6 @@ kbd {
     background: black;
   }
 }
-nav {
-  display: block;
-}
 .navbar-list {
   position: sticky;
   top: 1em;
@@ -78,14 +75,35 @@ nav {
   position: sticky;
   top: 1em;
 }
+main {
+  display: block;
+  max-width: 80ch;
+  padding-top: 1.5em;
+}
+
 @media screen and (max-width: 768px) {
-  .navbar-list {
+  main {
+    padding-inline: 1em;
+  }
+  .navbar {
+    width: 0;
+  }
+  .navbar ol {
     display: none;
   }
-  .navbar-list.show {
+  .navbar.show ol {
     display: block;
   }
+  .navbar.show {
+    display: block;
+    width: 100%;
+    background-color: black;
+  }
   .navbar-button {
+    position: sticky;
+    z-index: 999;
+    top: 1em;
+    left: 1em;
     display: block;
   }
 }

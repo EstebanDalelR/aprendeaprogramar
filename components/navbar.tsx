@@ -2,7 +2,7 @@ import Link from "next/link";
 import pages from "../data/pages.json";
 export default function Navbar() {
   const showNavbar = () => {
-    const navbar = document.querySelector(".navbar-list");
+    const navbar = document.querySelector(".navbar");
     if (navbar.classList.contains("show")) {
       navbar.classList.remove("show");
     } else {
