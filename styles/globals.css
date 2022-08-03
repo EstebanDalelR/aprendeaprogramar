@@ -73,6 +73,22 @@ nav {
   position: sticky;
   top: 1em;
 }
+.navbar-button {
+  display: none;
+  position: sticky;
+  top: 1em;
+}
+@media screen and (max-width: 768px) {
+  .navbar-list {
+    display: none;
+  }
+  .navbar-list.show {
+    display: block;
+  }
+  .navbar-button {
+    display: block;
+  }
+}
 .layout {
   display: flex;
 }
