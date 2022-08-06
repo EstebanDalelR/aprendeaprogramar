@@ -1,8 +1,10 @@
 import Head from "next/head";
 import Link from "next/link";
 import styles from "../styles/Home.module.css";
+import type { ReactElement } from 'react'
+import type { NextPageWithLayout } from './_app'
 
-export default function Home() {
+const Home: NextPageWithLayout = () => {
   return (
     <div className={styles.container}>
       <Head>
@@ -29,3 +31,9 @@ export default function Home() {
     </div>
   );
 }
+Home.getLayout = function getLayout(page: ReactElement) {
+  return (
+      page
+  )
+}
+export default Home;
