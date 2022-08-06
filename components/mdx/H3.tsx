@@ -8,8 +8,8 @@ const H2 = ({ children }) => {
   return (
     <h3 id={anchor}>
       <a href={link} className="anchor-link">
-        <AnchorImage />
         {children}
+        <AnchorImage />
       </a>
     </h3>
   );
