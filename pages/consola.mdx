@@ -3,6 +3,9 @@ import Image from "next/image";
 # Consola
 
 La consola también es llamada terminal o línea de comandos. Esta se usa para ejecutar comandos en el sistema.
+Desde acá los programadores controlan casi todo.
+
+Lo más importante es no temerle.
 
 ## Abrir la consola
 
@@ -37,7 +40,7 @@ La puedes encontrar en el Menú escribiendo <samp>Powershell</samp>
 
 Esta es mi absoluta favorita. Windows ahora ofrece la experiencia linux completa en su sub-sistema. Para acceder a WSL, [deberás seguir las instrucciones](https://docs.microsoft.com/es-es/windows/wsl/install). Curiosamente, empiezas desde Powershell, pero ya sabes llegar ahí.
 
-> Con WSL los comandos a usar serán los de Linux/Mac, tendrás un sistema IX
+> Con WSL los comandos a usar serán los de Linux/Mac, tendrás un sistema IX, pero recuerda que los directorios pueden variar y no necesariamente se comunica directamente a tu pantalla
 
 ### Mac
 
@@ -59,6 +62,8 @@ Si tienes Linux, ya sabes esto, pero dependerá de tu distribución.
 
 La consola se navega por texto y es importante entender cómo funciona esto. Para el sistema operativo, todo es un archivo, incluso las carpetas. Las abstracciones que se crean vienen después, por eso es tan útil poder ver dónde estamos.
 
+> Usaré carpeta y directorio de manera indiscriminada, evitaré _folder_ pero así también le dicen
+
 ### Windows
 
 ```
@@ -75,32 +80,140 @@ pwd
 
 Para los IX usamos `pwd`. Este comando sólo ejecuta una función. En inglés _print working directory_, imprimir directorio de trabajo.
 
-## Crear un archivo
+## Qué hay a mi alrededor
+
+Una de las preguntas más importantes que pueden surgir es cuál es el contenido del directorio donde me encuentro. Este comando te responde y dependiendo de los parámetros que le pases podrías saber el tamaño, verlo como tabla, ver si es ejecutable, etc.
+
 ### Windows
+
+```
+dir
+```
+
+Este bocablo te responde con una lista de archivos y carpetas. En inglés _directory_, directorio.
+
 ### IX
+
+```
+ls
+```
+
+Su función es la misma que la anterior, pero en IX es `ls`. Su hermano es `la`, que te da más información.
+
+## Moverme
+
+Para ir a otro directorio y poder ver su contenido y ejecutar comandos desde otra locación. En este es importante el sentido de la barra, en Windows, anteriormente se usaba la barra invertida (`\`), ahora no.
+
+### Windows
+
+```
+cd ruta\tan\larga\como\quieras
+
+```
+
+### IX
+
+```
+cd ruta/tan/larga/como/quieras
+
+```
+
+## Crear un archivo
+
+### Windows
+
+```
+cd ruta\mi-archivo.txt
+```
+
+### IX
+
+```
+touch ruta/mi-archivo.txt
+```
 
 ## Crear una carpeta
+
 ### Windows
+
+```
+md ruta\mi-archivo.txt
+```
+
 ### IX
+
+```
+mkdir ruta/mi-archivo.txt
+```
 
 ## Mover un archivo
+
 ### Windows
+
+```
+mv ruta\mi-archivo.txt ruta\mi-archivo-nuevo.txt
+```
+
 ### IX
+
+```
+mv ruta/mi-archivo.txt ruta/mi-archivo-nuevo.txt
+```
 
 ## Mover una carpeta
+
 ### Windows
+
+```
+mv ruta\mi-folder\ ruta\nueva\locacion\
+```
+
 ### IX
+
+```
+mv ruta/mi-folder/ ruta/nueva/locacion/
+```
 
 ## Eliminar un archivo
+
 ### Windows
+
+```
+del ruta\mi-archivo.txt
+```
+
 ### IX
 
-## Eliinar una carpeta
+```
+rm ruta/mi-archivo.txt
+```
+
+## Eliminar una carpeta
+
 ### Windows
+
+```
+rm ruta\mi-carpeta\
+```
+
 ### IX
+
+Usamos `-rf` para eliminar una carpeta, pidiendo que elimine su contenido con "recursividad" y "fuerza bruta".
+
+```
+rm -rf ruta/mi-carpeta/
+```
 
 ## Cerrar la consola
+
 ### Windows
+
+```
+exit
+```
+
 ### IX
 
-
+```
+exit
+```
