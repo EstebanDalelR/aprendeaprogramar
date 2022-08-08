@@ -83,6 +83,7 @@ main {
   max-width: 80ch;
   padding-left: 1em;
   padding-top: 1em;
+  min-height: 100vh;
 }
 
 @media screen and (max-width: 768px) {
