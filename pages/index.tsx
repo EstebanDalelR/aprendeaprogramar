@@ -1,8 +1,8 @@
 import Head from "next/head";
 import Link from "next/link";
-import styles from "./index.module.css";
-import type { ReactElement } from 'react'
-import type { NextPageWithLayout } from './_app'
+import styles from "../styles/index.module.css";
+import type { ReactElement } from "react";
+import type { NextPageWithLayout } from "./_app";
 
 const Home: NextPageWithLayout = () => {
   return (
@@ -24,16 +24,14 @@ const Home: NextPageWithLayout = () => {
         <p className={styles.description}>
           Aprende desde cero a programar para la vida
         </p>
-        <Link href="consola">
+        <Link href="inicio">
           <a className={styles.button}>Empieza ahora</a>
         </Link>
       </main>
     </div>
   );
-}
+};
 Home.getLayout = function getLayout(page: ReactElement) {
-  return (
-      page
-  )
-}
+  return page;
+};
 export default Home;
