@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
-import styles from "../styles/Home.module.css";
+import styles from "./index.module.css";
 import type { ReactElement } from 'react'
 import type { NextPageWithLayout } from './_app'
 
@@ -25,7 +25,7 @@ const Home: NextPageWithLayout = () => {
           Aprende desde cero a programar para la vida
         </p>
         <Link href="consola">
-          <a className={styles.a}>Empieza ahora</a>
+          <a className={styles.button}>Empieza ahora</a>
         </Link>
       </main>
     </div>
