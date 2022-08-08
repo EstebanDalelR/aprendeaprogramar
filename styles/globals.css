@@ -122,3 +122,14 @@ main {
 .layout {
   display: flex;
 }
+blockquote {
+  width: 80%;
+  background-color: #2f2f2f;
+  padding: 0.5em;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+}
+blockquote::before{
+  content: ">"
+}
