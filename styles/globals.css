@@ -70,6 +70,9 @@ kbd {
   position: sticky;
   top: 2em;
 }
+.navbar-link.bold {
+  font-weight: bold;
+}
 .navbar-button {
   display: none;
   position: sticky;
@@ -130,6 +133,6 @@ blockquote {
   display: flex;
   align-items: center;
 }
-blockquote::before{
-  content: ">"
+blockquote::before {
+  content: ">";
 }

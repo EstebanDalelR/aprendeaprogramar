@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { useState } from "react";
 import pages from "../data/pages.json";
 export default function Navbar() {
@@ -13,7 +14,8 @@ export default function Navbar() {
       navbar.classList.add("show");
     }
   };
-
+  const router = useRouter();
+  console.log(router.pathname);
   return (
     <nav className="navbar">
       <button className="navbar-button" onClick={() => showNavbar()}>
@@ -23,7 +25,13 @@ export default function Navbar() {
         {pages.map((page) => (
           <li className="navbar-item" key={page.title}>
             <Link href={page.slug}>
-              <a className="navbar-link">{page.title}</a>
+              <a
+                className={`navbar-link ${
+                  router.pathname.includes(page.slug) ? "bold" : ""
+                }`}
+              >
+                {page.title}
+              </a>
             </Link>
           </li>
         ))}
