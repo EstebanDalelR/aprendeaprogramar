@@ -6,5 +6,17 @@
   {
     "title": "Consola",
     "slug": "consola"
+  },
+  {
+    "title": "Herramientas",
+    "slug": "herramientas"
+  },
+  {
+    "title": "VS Code",
+    "slug": "vs-code"
+  },
+  {
+    "title": "Navegadores",
+    "slug": "navegadores"
   }
 ]
