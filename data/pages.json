@@ -18,5 +18,14 @@
   {
     "title": "Navegadores",
     "slug": "navegadores"
+  },
+  {
+    "title": "Git",
+    "slug": "git"
+  },
+  {
+    "title": "Hardware",
+    "slug": "hardware"
   }
+  
 ]
