@@ -26,6 +26,10 @@
   {
     "title": "Hardware",
     "slug": "hardware"
+  },
+  {
+    "title": "HackerNews",
+    "slug": "hackernews"
   }
   
 ]
