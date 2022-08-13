@@ -30,6 +30,10 @@
   {
     "title": "HackerNews",
     "slug": "hackernews"
+  },
+  {
+    "title": "Estación de batalla",
+    "slug": "estacion-de-batalla"
   }
   
 ]
